@@ -1,0 +1,63 @@
+{
+    "name": "coquibot/coqui-toolkit-packagist-publish",
+    "description": "Packagist package publishing toolkit for Coqui — submit, edit, and update packages on Packagist.org",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carmelo Santana"
+        }
+    ],
+    "keywords": [
+        "php-agents",
+        "coqui",
+        "packagist",
+        "toolkit",
+        "package-publishing"
+    ],
+    "require": {
+        "php": "^8.4",
+        "ext-json": "*",
+        "symfony/http-client": "^7.0"
+    },
+    "require-dev": {
+        "carmelosantana/php-agents": "^0.7",
+        "pestphp/pest": "^3.0",
+        "phpstan/phpstan": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CoquiBot\\Toolkits\\PackagistPublish\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CoquiBot\\Toolkits\\PackagistPublish\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "analyse": "phpstan analyse"
+    },
+    "extra": {
+        "php-agents": {
+            "toolkits": [
+                "CoquiBot\\Toolkits\\PackagistPublish\\PackagistPublishToolkit"
+            ],
+            "description": "Publish, edit, and update packages on Packagist.org",
+            "credentials": {
+                "PACKAGIST_USERNAME": "Packagist username — find it at https://packagist.org/profile/",
+                "PACKAGIST_API_TOKEN": "Packagist MAIN API token — get it at https://packagist.org/profile/ (the MAIN token is required for submit and edit; the SAFE token works for update only)"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
