@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use CarmeloSantana\PHPAgents\Tool\ToolResult;
-use CoquiBot\Toolkits\PackagistPublish\PackagistPublishTool;
+use CarmeloSantana\CoquiToolkitPackagistPublish\PackagistPublishTool;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
 

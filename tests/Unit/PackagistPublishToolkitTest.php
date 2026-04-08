@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use CoquiBot\Toolkits\PackagistPublish\PackagistPublishToolkit;
+use CarmeloSantana\CoquiToolkitPackagistPublish\PackagistPublishToolkit;
 use Symfony\Component\HttpClient\MockHttpClient;
 
 test('toolkit implements ToolkitInterface', function () {

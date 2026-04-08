@@ -1,5 +1,5 @@
 {
-    "name": "coquibot/coqui-toolkit-packagist-publish",
+    "name": "carmelosantana/coqui-toolkit-packagist-publish",
     "description": "Packagist package publishing toolkit for Coqui — submit, edit, and update packages on Packagist.org",
     "type": "library",
     "license": "MIT",
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "CoquiBot\\Toolkits\\PackagistPublish\\": "src/"
+            "CarmeloSantana\\CoquiToolkitPackagistPublish\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CoquiBot\\Toolkits\\PackagistPublish\\Tests\\": "tests/"
+            "CarmeloSantana\\CoquiToolkitPackagistPublish\\Tests\\": "tests/"
         }
     },
     "config": {
@@ -49,7 +49,7 @@
     "extra": {
         "php-agents": {
             "toolkits": [
-                "CoquiBot\\Toolkits\\PackagistPublish\\PackagistPublishToolkit"
+                "CarmeloSantana\\CoquiToolkitPackagistPublish\\PackagistPublishToolkit"
             ],
             "description": "Publish, edit, and update packages on Packagist.org",
             "credentials": {

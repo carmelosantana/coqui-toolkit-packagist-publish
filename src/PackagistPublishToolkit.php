@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CoquiBot\Toolkits\PackagistPublish;
+namespace CarmeloSantana\CoquiToolkitPackagistPublish;
 
 use CarmeloSantana\PHPAgents\Contract\ToolkitInterface;
 use Symfony\Component\HttpClient\HttpClient;
